@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #4ab1d2;
+    height: 2000px;
+}
+
+#keyboard {
+    width: 76rem;
+    margin: auto;
+    margin-top: 100px;
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(12,80px);
+    gap: 1rem;
+    background-color: #222222;
+    padding: 2.5rem;
+    border-radius: 15px;
+}
+
+.keys div{
+    background-color: #617d8123;
+    color: hsl(195, 57%, 56%);
+    padding: 1rem 1.2rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.angles{
+    font-size: 16px;
+}
+
+#lang, #left-arrow, #right-arrow{
+    padding: 0px;
+}
+#lang span, #left-arrow span, #right-arrow span{
+    line-height: 46px;
+    font-size: 26px;
+}
+#left-arrow span, #right-arrow span{
+    font-size: 20px;
+}
+#enter{
+    grid-area: 3/11/4/13 ;
+}
+#shift{
+    grid-area: 4/11/5/13;
+}
+#space{
+    grid-area: 5/5/6/9;
+}
+
+.keys>div:hover{
+    color: rgb(255, 255, 255);
+    background-color: #5e9fb4;
+    cursor: pointer;
+    transform: scale(1.08) ;
+}
